@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andy:) Captures</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #222;
+    }
+    header {
+      position: relative;
+      overflow: hidden;
+      height: 90vh;
+      background-color: #000;
+    }
+    .slider {
+      display: flex;
+      width: 300%;
+      height: 100%;
+      animation: slide 15s infinite;
+    }
+    .slider img {
+      width: 100vw;
+      height: 100%;
+      object-fit: cover;
+    }
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      33% { transform: translateX(-100vw); }
+      66% { transform: translateX(-200vw); }
+      100% { transform: translateX(0); }
+    }
+    nav {
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    .intro {
+      text-align: center;
+      padding: 40px;
+    }
+    .gallery-section {
+      margin-top: 20px;
+    }
+    .event-title {
+      margin-top: 30px;
+      font-weight: bold;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    .gallery a {
+      display: block;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .contact {
+      background-color: #222;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    footer {
+      text-align: center;
+      background-color: #111;
+      color: #ccc;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="slider">
+      <img src="photos/cover1.jpg" alt="Cover 1">
+      <img src="photos/cover2.jpg" alt="Cover 2">
+      <img src="photos/cover3.jpg" alt="Cover 3">
+    </div>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home" class="intro">
+    <h2>Welcome to Andy:) Captures</h2>
+    <p>Hi, I'm Andy – a professional photographer based in New Jersey. I specialize in capturing timeless moments with an artistic and authentic style. From portraits to events, I aim to create visual memories that tell your story beautifully.</p>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+
+    <div class="gallery-section">
+      <p class="event-title">Weddings</p>
+      <div class="gallery">
+        <a href="photos/wedding1.jpg" download><img src="photos/wedding1.jpg" alt="Wedding Photo 1"></a>
+        <a href="photos/wedding2.jpg" download><img src="photos/wedding2.jpg" alt="Wedding Photo 2"></a>
+      </div>
+    </div>
+
+    <div class="gallery-section">
+      <p class="event-title">Graduations</p>
+      <div class="gallery">
+        <a href="photos/graduation1.jpg" download><img src="photos/graduation1.jpg" alt="Graduation Photo 1"></a>
+        <a href="photos/graduation2.jpg" download><img src="photos/graduation2.jpg" alt="Graduation Photo 2"></a>
+      </div>
+    </div>
+
+    <div class="gallery-section">
+      <p class="event-title">Portraits</p>
+      <div class="gallery">
+        <a href="photos/portrait1.jpg" download><img src="photos/portrait1.jpg" alt="Portrait 1"></a>
+        <a href="photos/portrait2.jpg" download><img src="photos/portrait2.jpg" alt="Portrait 2"></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Based in New Jersey, USA</p>
+    <p>Phone: <a href="tel:+19179823126" style="color: #00ffcc;">917-982-3126</a></p>
+    <p>Email: <a href="mailto:andygamers2005@gmail.com" style="color: #00ffcc;">andygamers2005@gmail.com</a></p>
+    <p>Thank you for visiting my portfolio. I look forward to capturing your next special moment!</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Andy:) Captures. All rights reserved.</p>
+  </footer>
+</body>
+</html>
